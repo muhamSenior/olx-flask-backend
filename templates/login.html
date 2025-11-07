@@ -1,0 +1,15 @@
+
+<style>
+    input {
+        display: block;
+        margin-bottom: 20px;
+    }
+</style>
+<h1>Login Page</h1>
+
+<form method="post"action="{{url_for('login')}}">
+    <input type="text" name="phone" placeholder="Write Your Phone Number...">
+    <input type="password" name="parol" placeholder="Write Password...">
+    <button type="submit">Enter</button>
+    <a href="{{ url_for('register')}}">I Don't Have Account</a>
+</form>

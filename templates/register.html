@@ -1,0 +1,15 @@
+<style>
+    input {
+        display: block;
+        margin-bottom: 20px;
+    }
+</style>
+<h1>Register Page</h1>
+
+<form method="post"action="{{url_for('register')}}">
+    <input type="text" name="ism" placeholder="Write Name...">
+    <input type="text" name="phone" placeholder="Write Your Phone Number...">
+    <input type="password" name="parol" placeholder="Write Password...">
+    <button type="submit">Save</button>
+    <a href="{{ url_for('login')}}">I Have Account</a>
+</form> 
